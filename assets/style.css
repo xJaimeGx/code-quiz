@@ -1,0 +1,137 @@
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: lavender;
+}
+
+p {
+    font-size: 16px;
+    line-height: 15px;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quiz-box {
+    width: 600px;
+    margin: 0 auto;
+    background-color: deepskyblue;
+    padding: 10px 50px 50px 50px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+.quiz-box h1 {
+    background-color: lavender;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.quiz-box #question {
+    background-color: lavender;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    border: 3px solid black;
+    border-width: 1px 0;
+    padding: 3px 0;
+}
+
+.buttons {
+    margin: 15px 0 40px 0;
+}
+
+.btn {
+    text-align: left;
+    background-color: lavender;
+    width: 100%;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 5px 0;
+    padding: 10px;   
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: lightskyblue;
+    color: white;
+}
+
+.btn:active {
+    background-color: deepskyblue;
+}
+
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quiz-header #progress {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.quiz-header #count-down {
+    background-color: lavender;
+    font-size: 15px;
+    font-weight: 700;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 2px;
+}
+
+#score {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.quiz-repeat {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.quiz-repeat a {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    background-color: deepskyblue;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.quiz-repeat a:hover {
+    background-color: lightskyblue;
+}
+
