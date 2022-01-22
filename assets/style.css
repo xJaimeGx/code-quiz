@@ -38,7 +38,7 @@ img {
     background-color: deepskyblue;
     padding: 10px 50px 50px 50px;
     border: 5px solid black;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .quiz-box h1 {
@@ -49,7 +49,8 @@ img {
     width: 100%;
     margin-bottom: 20px;
     border: 3px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
+    text-shadow: 2px 2px deepskyblue;
 }
 
 .quiz-box #question {
@@ -60,6 +61,7 @@ img {
     border: 3px solid black;
     border-width: 1px 0;
     padding: 3px 0;
+    text-shadow: 2px 2px deepskyblue;
 }
 
 .buttons {
@@ -72,7 +74,7 @@ img {
     width: 100%;
     font-size: 18px;
     border: 2px solid black;
-    border-radius: 4px;
+    border-radius: 50px;
     margin: 5px 0;
     padding: 10px;   
 }
@@ -84,7 +86,7 @@ img {
 }
 
 .btn:active {
-    background-color: deepskyblue;
+    background-color: dodgerblue;
 }
 
 .quiz-header {
@@ -105,7 +107,7 @@ img {
     border: 2px solid black;
     padding: 5px;
     margin: 2px;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 #score {
@@ -127,7 +129,7 @@ img {
     text-decoration: none;
     background-color: deepskyblue;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: all .5s;
 }
 
