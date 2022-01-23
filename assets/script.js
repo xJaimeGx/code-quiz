@@ -85,7 +85,7 @@ function showScores() {
     let quizEndHTML =
        `
            <h1>Quiz Complete</h1>
-           <h2> id="score">You Scored: ${quiz.score} of ${quiz.questions.length}</h2>
+           <h2>You Scored: ${quiz.score} of ${quiz.questions.length}</h2>
            <div class="quiz-repeat">
               <a href="index.html">Try The Quiz Again</a>
            </div>
