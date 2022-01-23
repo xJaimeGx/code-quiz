@@ -109,7 +109,22 @@ let questions = [
         "Which type of brackets holds an array?", ["( )", "{ }", "[ ]", "< >"], "[ ]"
     ),
     new Question(
-        "What does the 'for' start in javascript?", ["a loop", "a string", "an array", "an object"], "a loop"
+        "What does the 'for' start in JavaScript?", ["a loop", "a string", "an array", "an object"], "a loop"
+    ),
+    new Question(
+        "Which of the following is NOT a JavaScript data type", ["Number", "String", "Boolean", "Letter"], "Letter"
+    ),
+    new Question(
+        "What is the use of a prompt box?", ["to call a function", "to alert the user", "to allow a user to enter input", "to stop a function"], "to allow a user to enter input"
+    ),
+    new Question(
+        "What does the '===' operator mean?", ["somewhat equal", "absolutely equal", "not equal", "greater than equal"], "absolutely equal"
+    ),
+    new Question(
+        "Which is the correct way to submit a form in JavaScript", ["document.text[0].submit();", "submit.form()", "document.form[0].submit();", "submit.doc[0]"], "document.form[0].submit();"
+    ),
+    new Question(
+        "Which is NOT a looping structure in JavaScript?", ["for", "while", "do-while", "this"], "this"
     )
 ]
 
