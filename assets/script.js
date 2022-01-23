@@ -92,6 +92,7 @@ function showScores() {
        `;
        let quizElement = document.getElementById("quiz");
        quizElement.innerHTML = quizEndHTML;
+    
 }
 
 // Create questions
