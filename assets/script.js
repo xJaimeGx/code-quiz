@@ -26,12 +26,12 @@ class Quiz {
     isEnded() {
         return this.questionIndex === this.questions.length
     }
-};
+}
 
 // Create a class for questions
 class Question {
     // for every question, there is text, a number of choices and the answer selected
-    constructor (text, choices, answer) {
+    constructor(text, choices, answer) {
         this.text = text;
         this.choices = choices;
         this.answer = answer;
@@ -41,7 +41,7 @@ class Question {
     isCorrectAnswer(choice) {
         return this.answer === choice;
     }
-};
+}
 
 // Display the question
 function displayQuestion() {
@@ -62,7 +62,7 @@ function displayQuestion() {
 
         showProgress();
     }
-};
+}
 
 // Guess function
 function guess(id, guess) {
@@ -71,32 +71,73 @@ function guess(id, guess) {
         quiz.guess(guess);
         displayQuestion();
     }
-};
+}
 
 // Show quiz progress
 function showProgress() {
     let currentQuestionNumber = quiz.questionIndex + 1;
     let progressElement = document.getElementById("progress");
-    progressElement.innerHTML = `Question ${currentQuestionNumber} of ${quiz.question.length}`;
-};
+    progressElement.innerHTML = `Question ${currentQuestionNumber} of ${quiz.questions.length}`;
+}
 
 // Show score
 function showScores() {
     let quizEndHTML =
        `
            <h1>Quiz Complete</h1>
-           <h2> id="score">You Scored: ${quiz.score} of ${quiz.question.length}</h2>
+           <h2> id="score">You Scored: ${quiz.score} of ${quiz.questions.length}</h2>
            <div class="quiz-repeat">
               <a href="index.html">Try The Quiz Again</a>
            </div>
        `;
        let quizElement = document.getElementById("quiz");
        quizElement.innerHTML = quizEndHTML;
-};
+}
 
 // Create questions
-let questions = {
-    //new Question(
-        ""
+let questions = [
+    new Question(
+        "What is considered the 'skeleton' code of a website?", ["JQuery", "Bootstrap", "CSS", "HTML"], "HTML" // correct answer outside of array
+    ),
+    new Question(
+        "What gives a website its style?", ["CSS", "HTML", "Adobe", "Markup"], "CSS"
+    ),
+    new Question(
+        "Which choice is an example of the proper way to write a function?", ["function showScore()", "function show Score()", "function showScore[]", "function ShowScore ()"], "function showScore()"
+    ),
+    new Question(
+        "Which type of brackets holds an array?", ["( )", "{ }", "[ ]", "< >"], "[ ]"
+    ),
+    new Question(
+        "What does the 'for' start in javascript?", ["a loop", "a string", "an array", "an object"], "a loop"
     )
+]
+
+// Initialize quiz
+let quiz = new Quiz(questions);
+
+// display question
+displayQuestion();
+
+// Add timer
+let time = 10;
+let quizTimeMinutes = time * 60 * 60;
+quizTime = quizTimeMinutes / 60;
+
+let counting = document.getElementById("count-down");
+
+function startCountdown() {
+    let quizTimer = setInterval(function() {
+        if (quizTime <= 0) {
+            clearInterval(quizTimer);
+            showScores();
+        } else {
+            quizTime--;
+            let sec = Math.floor(quizTime % 60);
+            let min = Math.floor(quizTime / 60) % 60;
+            counting.innerHTML = `Time: ${min} : ${sec}`;
+        }
+    }, 1000)
 }
+
+startCountdown();
