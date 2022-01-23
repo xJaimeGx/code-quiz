@@ -6,6 +6,9 @@ Test your knowledge on basic JavaScript with this short quiz. 10 multiple choice
  * CSS
  * JavaScript
 
+## Website
+https://xjaimegx.github.io/code-quiz/
+
 ## Screenshots
 
 <img width="1440" alt="Screen Shot 2022-01-23 at 12 42 04 PM" src="https://user-images.githubusercontent.com/94326810/150693092-d66c9442-bc98-429b-a901-76dc1ff00238.png">
