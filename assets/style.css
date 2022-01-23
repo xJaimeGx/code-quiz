@@ -147,6 +147,7 @@ img {
 }
 
 .start-btn {
+    color: black;
     text-align: center;
     background-color: lavender;
     width: 100%;
@@ -158,4 +159,14 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.start-btn:hover {
+    cursor: pointer;
+    background-color: lightskyblue;
+    color: white;
+}
+
+.start-btn:active {
+    background-color: dodgerblue;
 }
