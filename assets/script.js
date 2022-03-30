@@ -17,6 +17,8 @@ class Quiz {
         // if answer is correct, increase score by 1
         if (this.getQuestionIndex().isCorrectAnswer(answer)) {
             this.score++;
+        } else {
+            quizTime -= 60;
         }
         // go to the next question
         this.questionIndex++;
@@ -26,6 +28,7 @@ class Quiz {
     isEnded() {
         return this.questionIndex === this.questions.length
     }
+
 }
 
 // Create a class for questions
@@ -92,7 +95,13 @@ function showScores() {
        `;
        let quizElement = document.getElementById("quiz");
        quizElement.innerHTML = quizEndHTML;
+
+       scoreStorage();
     
+};
+
+function scoreStorage() {
+    localStorage.setItem("quiz.score", JSON.stringify(quiz.score))
 }
 
 // Create questions
